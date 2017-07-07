@@ -1,3 +1,10 @@
+### Reason for fork
+
+Upgrading kafka-clients version to 0.10.2.1 which allows us to dynamically configure jaas params like below:
+sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required \
+    username="" \
+    password="";
+
 ## README --  IBMStreams/streamsx.messaging
 
 The IBMStreams/streamsx.messaging toolkit project is an open source Streams toolkit project focused on the development of operators and functions that extend IBM InfoSphere Streams ability to interact with messaging systems.
@@ -5,14 +12,14 @@ The IBMStreams/streamsx.messaging toolkit project is an open source Streams tool
 Messaging Toolkit v5.1 is offically released to support InfoSphere Streams v4.2:
 * https://github.com/IBMStreams/streamsx.messaging/releases
 
-This toolkit contains support for: 
+This toolkit contains support for:
 * Kafka
 * RabbitMQ
 * JMS
 * MQTT
 * XMS
 
-Check out our SPLDOC here: 
+Check out our SPLDOC here:
 * http://ibmstreams.github.io/streamsx.messaging/com.ibm.streamsx.messaging/doc/spldoc/html/index.html
 
 To get started with working with this toolkit:
